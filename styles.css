@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .canvas {
   width: 100vw;
   height: 100vh;
@@ -16,6 +17,7 @@ body {
   background: linear-gradient(-175deg, red, orangered, yellow);
   position: relative;
 }
+
 .sun {
   width: 40px;
   height: 40px;
@@ -45,12 +47,64 @@ body {
 .boat {
   width: 200px;
   height: 60px;
-  background-color: white;
+  background: linear-gradient(
+    gray 5%,
+    white 20%,
+    #2d2d2d 20%,
+    #2d2d2d 85%,
+    gray 85%,
+    white 95%
+  );
   border-radius: 25%;
   position: absolute;
-  bottom: 10px;
+  bottom: 25px;
   right: 30px;
   transform: skew(-30deg);
-  box-shadow: 5px 5px 7px;
+  box-shadow: 7px 7px 9px;
   overflow: hidden;
+}
+.sunglasses {
+  position: relative;
+  bottom: 80px;
+  transform: skew(10deg);
+}
+
+.lens.left {
+  border: 2px solid black;
+  border-radius: 40%;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(30deg, gray, lightgray, gray);
+  position: absolute;
+  left: 300px;
+}
+
+.lens.right {
+  border: 2px solid black;
+  border-radius: 40%;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(30deg, gray, lightgray, gray);
+  position: absolute;
+  left: 325px;
+}
+.arm-left {
+  width: 1px;
+  height: 12px;
+  border: 1px solid silver;
+  position: absolute;
+  left: 300px;
+  background-color: silver;
+  border-radius: 5px;
+  z-index: -1;
+}
+.arm-right {
+  width: 1px;
+  height: 12px;
+  border: 1px solid silver;
+  position: absolute;
+  left: 330px;
+  background-color: silver;
+  border-radius: 5px;
+  z-index: -1;
 }
