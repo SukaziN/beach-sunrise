@@ -10,6 +10,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: pink;
+  overflow: hidden;
 }
 .sky {
   width: 100vw;
@@ -65,8 +66,9 @@ body {
 }
 .sunglasses {
   position: relative;
-  bottom: 80px;
+  bottom: 65px;
   transform: skew(10deg);
+  left: 500px;
 }
 
 .lens.left {
